@@ -1,0 +1,1 @@
+De modo a realizar a leitura de dados da tua realtime database consulta https://firebase.google.com/docs/web/setup?hl=pt

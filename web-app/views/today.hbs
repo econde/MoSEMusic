@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <title>MoSEMusic</title>
+</head>
+
+<body>
+    <h1>Página Principal</h1>
+    <p><b>Evento atual: {{info.EVENTO}}</b></p>
+    <div id="container1"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            Highcharts.chart('container1', {
+
+                title: {
+                    text: "Monitorização do evento Estação 1"
+                },
+                
+                
+                yAxis: {
+                    title: {
+                        text: 'dB'
+                    },
+                },
+                 xAxis: {
+                    categories: [{{info.STATION_1.noise_levels.timestamps}}].map(function(timestamp){
+                    let mili = timestamp*1000
+                    let dateObject = new Date(mili)
+                    let date = dateObject.toLocaleString()
+                    const i = date.indexOf(' ')
+                    const ret=date.substr(i+1)
+                    return ret
+                    })
+                },
+
+                
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle'
+                },
+
+                
+                 chart: {
+                    zoomType: 'x'
+                },
+
+                rangeSelector: {
+                    buttons: [{
+                     text: '+',
+                        events: {
+                            click() {
+                                 /* const xAxis = chart.xAxis[0];
+                                    xAxis.setExtremes(Date.UTC(2000, 11, 30), Date.UTC(2001, 11, 30)); */
+                            return false
+                            }
+                         }
+                     }, {
+                     text: '-',
+                        events: {
+                            click() {
+                                return false
+                             }
+                        }
+
+                         }]
+                },
+                series: [{
+                    name: 'LAE',
+                    data: [{{info.STATION_1.noise_levels.LAE}}]
+                },
+                {
+                    name: 'LAFmax',
+                    data: [{{info.STATION_1.noise_levels.LAmax}}]
+                },
+                {
+                    name: 'LAFmin',
+                    data: [{{info.STATION_1.noise_levels.LAmin}}]
+                },
+                 {
+                    name: 'LApeak',
+                    data: [{{info.STATION_1.noise_levels.LApeak}}]
+                },
+                  {
+                    name: 'LAEQ',
+                    data: [{{info.STATION_1.noise_levels.LAEQ}}]
+                },
+                ],
+
+                responsive: {
+                    rules: [{
+                        condition: {
+                            maxWidth: 500
+                        },
+                        chartOptions: {
+                            legend: {
+                                layout: 'horizontal',
+                                align: 'center',
+                                verticalAlign: 'bottom'
+                            }
+                        }
+                    }]
+                }
+
+            });
+        });
+    </script>
+
+    <div id="container2"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            Highcharts.chart('container2', {
+
+                title: {
+                    text: "Monitorização do evento Estação 2"
+                },
+                
+                
+                yAxis: {
+                    title: {
+                        text: 'dB'
+                    },
+                },
+                 xAxis: {
+                    categories: [{{info.STATION_2.noise_levels.timestamps}}].map(function(timestamp){
+                    let mili = timestamp*1000
+                    let dateObject = new Date(mili)
+                    let date = dateObject.toLocaleString()
+                    const i = date.indexOf(' ')
+                    const ret=date.substr(i+1)
+                    return ret
+                    })
+                },
+
+                
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle'
+                },
+
+               
+                 chart: {
+                    zoomType: 'x'
+                },
+
+                rangeSelector: {
+                    buttons: [{
+                     text: '+',
+                        events: {
+                            click() {
+                                 /* const xAxis = chart.xAxis[0];
+                                    xAxis.setExtremes(Date.UTC(2000, 11, 30), Date.UTC(2001, 11, 30)); */
+                            return false
+                            }
+                         }
+                     }, {
+                     text: '-',
+                        events: {
+                            click() {
+                                return false
+                             }
+                        }
+
+                         }]
+                },
+
+                series: [{
+                    name: 'LAE',
+                    data: [{{info.STATION_2.noise_levels.LAE}}]
+                },
+                {
+                    name: 'LAmax',
+                    data: [{{info.STATION_2.noise_levels.LAmax}}]
+                },
+                {
+                    name: 'LAmin',
+                    data: [{{info.STATION_2.noise_levels.LAmin}}]
+                },
+                 {
+                    name: 'LApeak',
+                    data: [{{info.STATION_2.noise_levels.LApeak}}]
+                },
+                  {
+                    name: 'LAEQ',
+                    data: [{{info.STATION_2.noise_levels.LAEQ}}]
+                },
+                ],
+
+                responsive: {
+                    rules: [{
+                        condition: {
+                            maxWidth: 500
+                        },
+                        chartOptions: {
+                            legend: {
+                                layout: 'horizontal',
+                                align: 'center',
+                                verticalAlign: 'bottom'
+                            }
+                        }
+                    }]
+                }
+
+            });
+        });
+    </script>
+</body>
+
+</html>

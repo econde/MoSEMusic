@@ -1,0 +1,12 @@
+"Evento":{
+      "STATION_ID":{
+         "noise_levels":{
+            "LAmax":[],
+            "LAmin":[],
+            "LApeak":[],
+            "LAE":[],
+            "LAEQ":[],
+            "timestamps":[]
+         }
+      }
+   }

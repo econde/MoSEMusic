@@ -1,0 +1,4 @@
+//Necessário instalar extensão REST CLIENT para VSCode
+
+GET http://localhost:8888/info
+

@@ -1,0 +1,2 @@
+Teste desenvolvido de modo a testar o filtro de ponderação A desenvolvido.
+Este teste consiste na filtragem de um array de valores normalizados comparados posteriormente com os resultados obtidos em Matlab.

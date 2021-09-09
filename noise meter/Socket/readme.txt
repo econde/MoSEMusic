@@ -1,0 +1,2 @@
+De modo a permitir interações entre o Servidor de Python e a realtime database é necessário gerar o ficheiro key.json.
+Consulte https://www.freecodecamp.org/news/how-to-get-started-with-firebase-using-python/
