@@ -83,11 +83,11 @@ function firestore_db() {
                                 return (a + b);
                             }) / data.STATION_1.noise_levels.LAE.length;
                             STATION_1_LAE = 20 * Math.log10(STATION_1_LAE / pref)
-                            STATION_1 = {
-                                "STATION_1_MAX": STATION_1_MAX,
-                                "STATION_1_MIN": STATION_1_MIN,
-                                "STATION_1_PEAK": STATION_1_PEAK,
-                                "STATION_1_LAE": STATION_1_LAE,
+                          STATION_1 = {
+                                "STATION_1_MAX": Math.round(STATION_1_MAX*10)/10,
+                                "STATION_1_MIN": Math.round(STATION_1_MIN*10)/10,
+                                "STATION_1_PEAK": Math.round(STATION_1_PEAK*10)/10,
+                                "STATION_1_LAE": Math.round(STATION_1_LAE * 10)/10
                             }
                         }
                         if (data.STATION_2 != null) {
@@ -111,11 +111,11 @@ function firestore_db() {
                                 return (a + b);
                             }) / data.STATION_2.noise_levels.LAE.length;
                             STATION_2_LAE = 20 * Math.log10(STATION_2_LAE / pref)
-                            STATION_2 = {
-                                "STATION_2_MAX": STATION_2_MAX,
-                                "STATION_2_MIN": STATION_2_MIN,
-                                "STATION_2_PEAK": STATION_2_PEAK,
-                                "STATION_2_LAE": STATION_2_LAE
+                           STATION_2 = {
+                                "STATION_2_MAX": Math.round(STATION_2_MAX*10)/10,
+                                "STATION_2_MIN": Math.round(STATION_2_MIN*10)/10,
+                                "STATION_2_PEAK": Math.round(STATION_2_PEAK*10)/10,
+                                "STATION_2_LAE": Math.round(STATION_2_LAE * 10)/10
                             }
                         }
                         const json = {
