@@ -1,0 +1,9 @@
+make -f /home/ezequiel/MEGAsync/MoSEMusic/noise_meter/${workspaceFolder}/count_words --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/ezequiel/MEGAsync/MoSEMusic/noise_meter'
+make: Leaving directory '/home/ezequiel/MEGAsync/MoSEMusic/noise_meter'
+ 
+make: /home/ezequiel/MEGAsync/MoSEMusic/noise_meter//count_words: No such file or directory
+make: *** No rule to make target '/home/ezequiel/MEGAsync/MoSEMusic/noise_meter//count_words'.
+make: Failed to remake makefile '/home/ezequiel/MEGAsync/MoSEMusic/noise_meter//count_words'.
+make: *** No targets specified and no makefile found.  Stop.
+

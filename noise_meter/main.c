@@ -10,15 +10,14 @@
 #include "client.h"
 
 
-void writeToFile(char*json,char *fileName){//escrever o json formado num ficheiro
-	
-  FILE *file = fopen(fileName, "w");
-  int results = fputs(json, file);
-  if (results == EOF) {
-   printf("Erro na escrita\n");
-   exit(0);
-  }
-   fclose(file);
+void writeToFile(char*json, char *fileName) {//escrever o json formado num ficheiro
+	FILE *file = fopen(fileName, "w");
+	int results = fputs(json, file);
+	if (results == EOF) {
+		printf("Erro na escrita\n");
+		exit(0);
+	}
+	fclose(file);
 }
 
 snd_pcm_format_t format = SND_PCM_FORMAT_S16_LE;
