@@ -1,235 +1,229 @@
-make all -f /home/ezequiel/MEGAsync/MoSEMusic/noise_meter/${workspaceFolder}/count_words --print-data-base --no-builtin-variables --no-builtin-rules --question
-# GNU Make 4.3
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
-# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jun  2 16:21:09 2022
+# Make data base, printed on Fri Jun  3 11:15:14 2022
 
 # Variables
 
-# environment
-GDK_BACKEND = x11
-# environment
-LC_ALL = C
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-a7cf0bcf-b4c3-4386-bac5-e9dd0e8234a5.sock
-# environment
-LC_NAME = pt_PT.UTF-8
-# environment
-LC_NUMERIC = pt_PT.UTF-8
-# environment
-VSCODE_CWD = /home/ezequiel
-# environment
-LC_ADDRESS = pt_PT.UTF-8
-# environment
-GDM_LANG = en_US
-# default
-MAKE_COMMAND := make
-# environment
-QT_ACCESSIBILITY = 1
-# automatic
-@D = $(patsubst %/,%,$(dir $@))
-# environment
-VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# default
-.VARIABLES := 
-# environment
-PWD = /home/ezequiel/MEGAsync/MoSEMusic/noise_meter
-# automatic
-%D = $(patsubst %/,%,$(dir $%))
-# environment
-XDG_DATA_DIRS = /usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share
-# automatic
-^D = $(patsubst %/,%,$(dir $^))
-# environment
-VSCODE_LOG_STACK = false
-# automatic
-%F = $(notdir $%)
-# environment
-VSCODE_CODE_CACHE_PATH = /home/ezequiel/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
-# environment
-XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
-# environment
-LANG = C
-# environment
-XAUTHORITY = /home/ezequiel/.Xauthority
-# default
-.LOADED := 
-# default
-.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
-# makefile
-MAKEFLAGS = prR
-# makefile
-CURDIR := /home/ezequiel/MEGAsync/MoSEMusic/noise_meter
-# environment
-VSCODE_PIPE_LOGGING = true
-# environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
-# environment
-LESSOPEN = | /usr/bin/lesspipe %s
-# automatic
-*D = $(patsubst %/,%,$(dir $*))
-# environment
-MFLAGS = -prR
-# environment
-SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
-# default
-.SHELLFLAGS := -c
-# environment
-XDG_CONFIG_DIRS = /etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg
-# automatic
-+D = $(patsubst %/,%,$(dir $+))
-# environment
-XDG_SESSION_DESKTOP = xubuntu
-# makefile
-MAKEFILE_LIST := 
-# automatic
-@F = $(notdir $@)
-# environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
-VSCODE_PID = 5686
-# environment
-XDG_SESSION_TYPE = x11
-# automatic
-?D = $(patsubst %/,%,$(dir $?))
-# environment
-CLUTTER_BACKEND = x11
-# environment
-SESSION_MANAGER = local/ezequiel-900X3C-900X3D-900X4C-900X4D:@/tmp/.ICE-unix/817,unix/ezequiel-900X3C-900X3D-900X4C-900X4D:/tmp/.ICE-unix/817
-# automatic
-*F = $(notdir $*)
-# environment
-QT_QPA_PLATFORMTHEME = gtk2
-# environment
-CHROME_DESKTOP = code-url-handler.desktop
-# environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
-# environment
-VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
-# default
-MAKE_HOST := x86_64-pc-linux-gnu
-# makefile
-SHELL = /bin/sh
-# default
-MAKECMDGOALS := all
-# environment
-XMODIFIERS = @im=ibus
-# environment
-SHLVL = 0
-# environment
-MAKELEVEL := 0
-# default
-MAKE = $(MAKE_COMMAND)
-# environment
-PATH = /home/ezequiel/.local/bin:/home/ezequiel/.local/bin:/home/ezequiel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-# default
-MAKEFILES := 
-# environment
-LANGUAGE = en_US
-# environment
-LC_MONETARY = pt_PT.UTF-8
-# automatic
-^F = $(notdir $^)
-# environment
-LC_TIME = pt_PT.UTF-8
-# environment
-VSCODE_LOG_NATIVE = false
-# environment
-LC_TELEPHONE = pt_PT.UTF-8
-# environment
-LESSCLOSE = /usr/bin/lesspipe %s %s
 # automatic
 ?F = $(notdir $?)
 # environment
-XDG_SEAT = seat0
-# environment
-GTK_IM_MODULE = ibus
-# environment
-XDG_CURRENT_DESKTOP = XFCE
-# environment
-LS_COLORS = 
-# automatic
-+F = $(notdir $+)
-# environment
-XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
-# environment
 DESKTOP_SESSION = xubuntu
-# environment
-ORIGINAL_XDG_CURRENT_DESKTOP = XFCE
-# 'override' directive
-GNUMAKEFLAGS := 
-# environment
-CLUTTER_IM_MODULE = ibus
-# environment
-LOGNAME = ezequiel
-# environment
-XDG_VTNR = 7
-# makefile
-.DEFAULT_GOAL := 
-# environment
-DISPLAY = :0.0
-# environment
-USER = ezequiel
 # default
- 
-make: /home/ezequiel/MEGAsync/MoSEMusic/noise_meter//count_words: No such file or directory
-make: *** No rule to make target '/home/ezequiel/MEGAsync/MoSEMusic/noise_meter//count_words'.  Stop.
-
-MAKE_VERSION := 4.3
+.SHELLFLAGS := -c
 # environment
-LC_MEASUREMENT = pt_PT.UTF-8
+XDG_SESSION_CLASS = user
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /home/ezequiel/.Xauthority
+# environment
+GDMSESSION = xubuntu
+# default
+MAKE_VERSION := 4.2.1
+# makefile
+CURDIR := /home/ezequiel/MEGAsync/MoSEMusic/noise_meter
+# makefile
+SHELL = /bin/sh
+# environment
+GDM_LANG = en_US
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/share/code/code
 # environment
-LC_PAPER = pt_PT.UTF-8
+XDG_CONFIG_DIRS = /etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg
 # environment
-XDG_RUNTIME_DIR = /run/user/1000
+GTK_OVERLAY_SCROLLING = 0
+# makefile (from 'makefile', line 1)
+MAKEFILE_LIST :=  makefile
+# automatic
+@F = $(notdir $@)
+# 'override' directive
+GNUMAKEFLAGS := 
 # environment
-GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+MAKELEVEL := 0
+# environment
+XDG_DATA_DIRS = /usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# environment
+VSCODE_VERBOSE_LOGGING = true
 # environment
 LC_CTYPE = pt_PT.UTF-8
 # environment
-GTK_OVERLAY_SCROLLING = 0
+LESSOPEN = | /usr/bin/lesspipe %s
 # environment
-XDG_SESSION_CLASS = user
+LC_NAME = pt_PT.UTF-8
+# environment
+VSCODE_CWD = /home/ezequiel
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/ezequiel/bin:/home/ezequiel/pi/cross-pi-gcc-8.3.0-2/bin:/home/ezequiel/.local/bin:/home/ezequiel/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ezequiel/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin:/home/ezequiel/arduino-1.8.3/hardware/tools/avr/bin:/home/ezequiel/bin:/home/ezequiel/en.stm32cubeprog_v2-3-0/:/home/ezequiel/kotlinc/bin:/home/ezequiel/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+SESSION_MANAGER = local/ezequiel-desktop:@/tmp/.ICE-unix/2565,unix/ezequiel-desktop:/tmp/.ICE-unix/2565
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+XDG_MENU_PREFIX = xfce-
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/ezequiel
+# environment
+LS_COLORS = 
+# environment
+XDG_SESSION_DESKTOP = xubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0.0
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /home/ezequiel/MEGAsync/MoSEMusic/noise_meter
+# environment
+QT_QPA_PLATFORMTHEME = gtk2
+# default
+.LOADED := 
+# environment
+XDG_SEAT = seat0
+# environment
+SSH_AGENT_PID = 2689
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = XFCE
+# environment
+GTK_MODULES = gail:atk-bridge
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /home/ezequiel
 # environment
-QT_IM_MODULE = ibus
+LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
-ELECTRON_RUN_AS_NODE = 1
+VSCODE_CODE_CACHE_PATH = /home/ezequiel/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-cf8a8218-1.67.2-main.sock
+LOGNAME = ezequiel
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XDG_VTNR = 7
+# environment
+CLUTTER_BACKEND = x11
+# environment
+LC_TIME = pt_PT.UTF-8
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 0
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-30ab31a4-1594-4c4e-afa6-16b272c94cec.sock
 # environment
 XDG_SESSION_ID = c1
 # environment
-PANEL_GDK_CORE_DEVICE_EVENTS = 0
+USER = ezequiel
+# environment
+LC_MONETARY = pt_PT.UTF-8
+# makefile
+.DEFAULT_GOAL := main
+# environment
+XDG_CURRENT_DESKTOP = XFCE
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LC_TELEPHONE = pt_PT.UTF-8
 # default
-.RECIPEPREFIX := 
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = en_US
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-cf8a8218-1.67.2-main.sock
+# environment
+PANEL_GDK_CORE_DEVICE_EVENTS = 0
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# environment
+LC_PAPER = pt_PT.UTF-8
+# environment
+QT_ACCESSIBILITY = 1
+# default
+MAKEFILES := 
+# environment
+LC_NUMERIC = pt_PT.UTF-8
 # automatic
 <F = $(notdir $<)
+# environment
+LC_MEASUREMENT = pt_PT.UTF-8
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
 # default
 SUFFIXES := 
 # environment
-XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/ezequiel
+CHROME_DESKTOP = code-url-handler.desktop
 # default
-.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
-# environment
-XDG_MENU_PREFIX = xfce-
-# environment
-GDMSESSION = xubuntu
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # environment
 LC_IDENTIFICATION = pt_PT.UTF-8
+# default
+.RECIPEPREFIX := 
+# environment
+LC_ADDRESS = pt_PT.UTF-8
+# environment
+LANG = C
+# environment
+VSCODE_PID = 23033
 # variable set hash-table stats:
-# Load=107/1024=10%, Rehash=0, Collisions=4/131=3%
+# Load=105/1024=10%, Rehash=0, Collisions=13/130=10%
 
 # Pattern-specific Variable Values
 
@@ -237,8 +231,9 @@ LC_IDENTIFICATION = pt_PT.UTF-8
 
 # Directories
 
+# . (device 2049, inode 2776097): 18 files, no impossibilities.
 
-# No files, no impossibilities in 0 directories.
+# 18 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -247,38 +242,164 @@ LC_IDENTIFICATION = pt_PT.UTF-8
 # Files
 
 # Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+client.o: client.c client.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 20):
+	gcc -g -c client.c
+	
+
+values.o: values.c values.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 11):
+	gcc -g -c values.c
+
+# Not a target:
+filter.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+process.o: process.c process.h buff.h values.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 14):
+ 
+	gcc -g -c process.c
+
+# Not a target:
+buff.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+ 
+
+# Not a target:
+filter.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-02 16:09:45
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+buff.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+client.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+values.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+process.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
-/home/ezequiel/MEGAsync/MoSEMusic/noise_meter//count_words:
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has not been updated.
-
-# Not a target:
-all:
-#  Command line target.
+client.h:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+values.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 23):
+	rm main *.o
+
+# Not a target:
+process.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+filter.o: filter.c filter.h buff.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 17):
+	gcc -g -c filter.c
+
+main: main.o buff.o values.o process.o filter.o client.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 2):
+	gcc -Wall -g -o main main.o buff.o process.o filter.o values.o client.o -lasound -lm -ljansson
+
+main.o: main.c buff.h values.h process.h filter.h client.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 5):
+	gcc -g -c main.c 
+
+buff.o: buff.c buff.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 8):
+	gcc -g -c buff.c
+
 # files hash-table stats:
-# Load=4/1024=0%, Rehash=0, Collisions=0/14=0%
+# Load=23/1024=2%, Rehash=0, Collisions=0/64=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 6 / storage = 114 B / avg = 19 B
-# current buf: size = 8162 B / used = 114 B / count = 6 / avg = 19 B
+# strcache buffers: 1 (0) / strings = 30 / storage = 252 B / avg = 8 B
+# current buf: size = 8162 B / used = 252 B / count = 30 / avg = 8 B
 
-# strcache performance: lookups = 9 / hit rate = 33%
+# strcache performance: lookups = 68 / hit rate = 55%
 # hash-table stats:
-# Load=6/8192=0%, Rehash=0, Collisions=0/9=0%
-# Finished Make data base on Thu Jun  2 16:21:09 2022
+# Load=30/8192=0%, Rehash=0, Collisions=1/68=1%
+# Finished Make data base on Fri Jun  3 11:15:14 2022
 
  

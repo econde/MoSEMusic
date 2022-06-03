@@ -17,23 +17,22 @@
 typedef struct{
 	float *Prms;
 	int num_elems;
-	float calcedValue;//valor calculado para o calibrador
-	float definedValue;//valor correspondente real 94dB
+	float calcedValue;	// valor calculado para o calibrador
+	float definedValue;	// valor correspondente real 94dB
 	
-}Calibrator;
+} Calibrator;
 
-Calibrator *initCalibrator(float val);//inicializar o calibrador
-void addValueToCalibrator(Calibrator *cal, float prms);//adição de valor para o calibrador
-void calcCalibrator(Buffer *buff, int size,Calibrator *cal);//rms medido num bloco
-void calcValueCalibrator(Calibrator *cal);//rms calculado no final
-float calibrate(Calibrator *cal, float value);//calibrar e passar para dB
-float decalibrate(Calibrator *cal, float calibrated);//change calibrated value to decalibritaded
+Calibrator *initCalibrator(float val);			// inicializar o calibrador
+void addValueToCalibrator(Calibrator *cal, float prms);	// adição de valor para o calibrador
+void calcCalibrator(Buffer *buff, int size,Calibrator *cal);	// rms medido num bloco
+void calcValueCalibrator(Calibrator *cal);		// rms calculado no final
+float calibrate(Calibrator *cal, float value);		// calibrar e passar para dB
+float decalibrate(Calibrator *cal, float calibrated);	// change calibrated value to decalibritaded
 float toLinear(float val);
 
-void square(Buffer *buff,int size);//quadrado
-void calcPeak(Buffer *buff,int size,Values_struct *values);//cálculo do peak
-void processBuff(Buffer *buff,Values_struct *value, int size);//medições lae,lmax,lmin
-void calcFinal(Values_struct *values, Calibrator *cal);//cálculo de todas as medições apos 1 segundo
+void square(Buffer *buff, int size);	//	quadrado
+void calcPeak(Buffer *buff,int size,Values_struct *values);	// cálculo do peak
+void processBuff(Buffer *buff,Values_struct *value, int size);	// medições lae,lmax,lmin
+void calcFinal(Values_struct *values, Calibrator *cal);	// cálculo de todas as medições apos 1 segundo
 	
-
 #endif

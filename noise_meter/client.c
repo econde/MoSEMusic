@@ -2,7 +2,7 @@
 
 Client_Struct *initClient(){
 	
-	Client_Struct *cli = malloc(sizeof(*cli));
+	Client_Struct *cli = malloc(sizeof *cli);
 	cli->send_counter = 1;//inicialização do contador de envio de json a 1 (mais conveniente) 
 						//Sempre que ocorre um envio este é incrementado
 	cli->socket = 0;//Socket
@@ -32,7 +32,7 @@ void connectSocket(Client_Struct *cli,int socket_desc,struct sockaddr_in server)
 }
 
 void sendJson(Client_Struct *cli,char *json){
-	if( send(cli->socket , json , strlen(json) , 0) < 0){//envio do Json
+	if( send(cli->socket, json, strlen(json), 0) < 0) {	//envio do Json
 		printf("Send failed");
 		return;
 	}

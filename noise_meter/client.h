@@ -14,14 +14,12 @@
 typedef struct{
 	int send_counter;
 	int socket;
-	
-}Client_Struct;
+} Client_Struct;
 
 
-Client_Struct *initClient();//Iniciar o cliente socket
+Client_Struct *initClient();	//Iniciar o cliente socket
 
-void connectSocket(Client_Struct *cli,int socket_desc,struct sockaddr_in server);//conectar ao socket do servidor
-void sendJson(Client_Struct *cli,char *json);//enviar o json
-	
+void connectSocket(Client_Struct *cli,int socket_desc,struct sockaddr_in server);	//conectar ao socket do servidor
+void sendJson(Client_Struct *cli,char *json);	//enviar o json
 
 #endif
